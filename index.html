@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Users Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Random Users Generator</h1>
+            <p>Generador de personas aleatorias usando RandomUser.me API</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="loadUsers()" id="loadBtn">
+                Generar 10 Personas Aleatorias
+            </button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            Generando personas aleatorias...
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="stats" class="stats" style="display: none;">
+            <p id="statsText"></p>
+        </div>
+
+        <div id="usersContainer" class="users-grid"></div>
+    </div>
+
+    <script src="fetchUsers.js"></script>
+</body>
+</html>
