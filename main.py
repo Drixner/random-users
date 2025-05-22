@@ -7,7 +7,7 @@ from datetime import datetime
 
 app = FastAPI(title="Random Users API", version="1.0.0")
 
-# Configurar CORS
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
