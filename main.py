@@ -1,9 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 import httpx
-import asyncio
-from typing import List, Dict
+from typing import List
 from pydantic import BaseModel
 from datetime import datetime
 
